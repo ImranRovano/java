@@ -1,0 +1,46 @@
+// Custom.scss
+
+//colors
+$primary: rgb(184, 134, 11);
+$secondary: #50321e;
+$tertiary: #f8f4eb;
+$quaternary: #705107;
+$quinary: #e0e0da;
+
+$bottom-footer-bg-color: rgba(200, 200, 200, .3);
+
+//logo
+$navbar-light-brand-color: $primary; //color when not hovering
+$navbar-light-brand-hover-color: none; //color when hovering
+
+//nav links
+$dropdown-link-active-bg: $primary; //background color when clicking one of the links inside dropdown
+$dropdown-link-color: $secondary; //color of letters inside dropdown
+$navbar-light-active-color: $secondary; //color of the dropdown title
+
+$carousel-transition-duration: 3s;
+
+$border-color: #fff;
+
+
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+/*
+// Custom.scss
+// Option B: Include parts of Bootstrap
+
+// Required
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// Optional
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/code";
+@import "../node_modules/bootstrap/scss/grid";
+*/

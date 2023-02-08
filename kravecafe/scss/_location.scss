@@ -1,0 +1,133 @@
+.location__left-col {
+    background-color: $tertiary;
+    height: 64rem;
+    margin-top: 21rem;
+    position: relative;
+    transform: translateY(0rem);
+    transition: transform 2s ease-in-out;
+}
+
+.location__border-left {
+    border-bottom: 1px solid $quinary;
+    border-left: 1px solid $quinary;
+    border-right: 1px solid $quinary;
+    border-top: 1px solid $quinary;
+    height: 58rem;
+    position: absolute;
+    top: 50%;
+    transform: translate(3%, -50%);
+    width: 106rem;
+    z-index: 1;
+}
+.location__border-right {
+    border-bottom: 1px solid $quinary;
+    border-right: 1px solid $quinary;
+    border-top: 1px solid $quinary;
+    height: 58rem;
+    position: absolute;
+    top: 35rem;
+    transform: translate(0rem, -29rem);
+    width: 42rem;
+    z-index: 1;
+}
+
+.location__title {
+    color: $primary;
+    padding-top: 6rem;
+    transition: opacity 1.5s ease-in-out;
+    z-index: 2;
+}
+
+.location__right-col {
+    height: 40rem;
+    margin-top: 20rem;
+    padding: 0;
+    position: relative;
+    transform: translateY(-2rem);
+    transition: transform 2s ease-in-out;
+}
+
+.location__img {
+    height: 64rem;
+    width: 100%;
+    z-index: 0;
+}
+
+.location__address-hours {
+    padding-top: 1rem;
+}
+
+.location__address {
+    position: relative;
+    transition: opacity 1.5s ease-in-out .2s;
+}
+
+.location__address-list {
+    list-style-type: none;
+    margin-top: 4rem;
+    z-index: 20;
+}
+
+.location__address-item {
+    color: $quaternary;
+    z-index: 20;
+}
+
+.location__hour {
+    transition: opacity 1.5s ease-in-out;
+}
+
+.location__hour-list {
+    list-style-type: none;
+    margin-top: 4rem;
+    padding: 0;
+    z-index: 20;
+}
+
+.location__hour-item {
+    color: $quaternary;
+    z-index: 20;
+}
+
+.location__arrow-container {
+    position: absolute;
+    right: 0;
+    z-index: 20;
+}
+
+.location__map-indicator {
+    color: $quaternary;
+    font-size: 2rem;
+    font-weight: 600;
+    padding-right: 15px;
+    z-index: 20;
+}
+
+.location__map-icon-arrow {
+    color: $quaternary;
+    font-size: 3rem;
+    position: absolute;
+    right: 3rem;
+    width: 1.7rem;
+    z-index: 20;
+}
+
+///////////////////////
+
+.map__section {
+    margin-top: 10rem;
+    margin-bottom: -16rem;
+}
+
+.map__container {
+    padding: 0;
+    position: relative;
+}
+
+#map {
+    border: 5px solid #b7b7b7;
+    height: 48rem;
+    margin: 0 auto -10rem;
+    width: 80%;
+    z-index: 2;
+   }

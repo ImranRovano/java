@@ -1,0 +1,85 @@
+body {
+    height: 100%;
+}
+
+.menu__col {
+    height: 100%;
+    transform: translateY(13rem);
+    width: 100%;
+}
+
+.menu__accordion {
+    background-color: rgba(200, 200, 200, 0.3);
+    border: 2px solid #b7b7b7;
+    padding: 0 3rem 3rem;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+}
+
+.menu__png-container {
+    width: 100%;
+}
+
+.menu__png-title {
+    height: auto;
+    width: 30%;
+}
+
+.btn-link:hover {
+    text-decoration: none;
+}
+
+.btn-link:focus, .btn-link.focus {
+    text-decoration: none;
+}
+
+.menu__card-body {
+    color: $quaternary;
+    background-color: $tertiary;
+}
+
+.menu__description-container {
+    margin: 0 3rem 1rem;
+}
+
+#breakfast {
+    position: absolute;
+    transform: translateY(-20rem);
+}
+
+#lunch {
+    position: absolute;
+    transform: translateY(-17rem);
+}
+
+#dinner {
+    position: absolute;
+    transform: translateY(-14rem);
+}
+
+#beverage {
+    position: absolute;
+    transform: translateY(-14rem);
+}
+
+#wine {
+    position: absolute;
+    transform: translateY(-10rem);
+}
+
+#bakery {
+    position: absolute;
+    transform: translateY(-14rem);
+}
+
+#dessert {
+    position: absolute;
+    transform: translateY(-14rem);
+}
+
+#special {
+    position: absolute;
+    transform: translateY(-12rem);
+}
+

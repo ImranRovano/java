@@ -1,0 +1,170 @@
+
+/////////////////////////////////////
+//reusable code
+
+.nav__link--default { //adjusted
+    letter-spacing: .6rem; 
+    &:hover {
+        color: $primary !important;
+    }
+}
+
+.reserve__link--default { //adjusted
+    letter-spacing: .6rem; 
+    &:hover {
+        background-color: $primary !important;
+        color: $white !important;
+    }
+}
+
+.button__btn--default {
+    border-color: $secondary;
+    font-weight: 500;
+    z-index: 100;
+    &:hover {
+        color: $white !important;
+    }
+}
+
+.button__btn--link {
+    color: $secondary;
+}
+
+.dropdown__link--default {
+    font-size: 1.2rem;
+    &:active {
+        color: #fff !important;
+    }
+}
+
+.container__width--default {
+    max-width: 100vw;
+}
+
+.content__paragraph--default { //adjusted
+    color: $secondary;
+    font-size: 1.4rem;
+    letter-spacing: .1rem; 
+    z-index: 1000;
+}
+
+.icon__link--default {
+    color: $secondary; 
+    font-size: 2.5rem;
+    padding: .5rem;
+    &:hover {
+        color: $primary !important;
+    }
+}
+
+.body__btn--font-size {
+    font-size: 1rem;
+    z-index: 1000;
+}
+
+.title-box__container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.title-box__row {
+    position: absolute;
+    top: 50%;
+}
+
+.transparent-box {
+    background: rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    padding: .4rem;
+}
+
+.white-border-box {
+    border: 5px solid #fff;
+    display: inline-block;
+}
+
+.white-title { //adjusted
+    color: #fff;
+    font-size: 3.4rem;
+    font-weight: 300;
+    letter-spacing: .9rem; 
+    padding: 0 8rem;
+    text-transform: uppercase;
+}
+
+.content-title {
+    font-size: 3.4rem;
+    font-weight: 300;
+    letter-spacing: 7px;
+}
+
+.filter-black {
+    // background-color: #755151;
+    background-color: black;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.title__color--primary {
+    color: $primary;
+}
+
+.register-text  {
+    color: $secondary;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.big-btn {
+    background-color: $tertiary;
+    color: $primary;
+    font-size: 1.7rem;
+    padding: 1rem 2rem;
+}
+
+.register-title {
+    color: #50321e;
+    margin-bottom: 5rem;
+}
+
+.btn-pair {
+    font-size: 1.7rem;
+    margin: 2rem .5rem 1.5rem .5rem;
+    padding: .5rem 1rem; 
+}
+
+.margin-left-1rem {
+    margin-left: 1rem;
+}
+
+.margin-top-3rem {
+    margin-top: 3rem;
+}
+
+.margin-bottom-3rem {
+    margin-bottom: 3rem;
+}
+
+.color-white {
+    color: white;
+}
+
+.fontsize-onehalfrem { 
+    font-size: 1.5rem;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.inline-block {
+    display: inline-block;
+}

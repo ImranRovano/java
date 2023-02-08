@@ -1,0 +1,51 @@
+/////////////////////////////////////
+//top footer
+
+.top-footer {
+    bottom: 0;
+    position: sticky;
+    z-index: 1000;
+}
+
+.top-footer__section {
+    margin-top: 36.9rem;
+}
+
+.top-footer__navbar--height {
+    height: 5.2rem;
+}
+
+.top-footer__icon--position {
+    margin-top: 0.3rem; 
+}
+
+.top-footer__link--font {
+    font-size: 1.1rem;
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: .4rem;
+}
+
+.top-footer-nav {
+    margin-top: .8rem;
+}
+
+.bar {
+    border-right: .1rem solid $quinary;
+}
+
+/////////////////////////////////////
+//bottom footer
+.bottom-footer {
+    background-color: $bottom-footer-bg-color;
+    height: 6rem;
+}
+
+.bottom-footer__text--style {
+    color: $secondary;
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    padding-top: 1.8rem;
+} 

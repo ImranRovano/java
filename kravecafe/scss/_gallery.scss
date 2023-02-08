@@ -1,0 +1,132 @@
+.gallery__hero-section {
+    height: auto;
+    position: relative;
+}
+
+.gallery__hero-bg-img {
+    background-attachment: fixed;
+    background-image: url('./../images/gallery__jumbotron/basket-918416_1920.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    z-index: 1;
+}
+
+.gallery__hero-filter {
+    background-color: black;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    height: 44rem;
+    left: 50%;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -30%);
+    width: 120rem;
+    transition: opacity 2s ease-in-out;
+}
+
+.gallery__hero-filter--visible {
+    opacity: .6;
+}
+
+.gallery__hero-container {
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    z-index: 3;
+}
+
+.gallery__hero-title {
+    color: white;
+    font-size: 3.4rem;
+    margin-bottom: 2rem;
+}
+
+.gallery__hero-sub-title {
+    color: white;
+    line-height: 1.5rem;
+    padding-bottom: 4rem;
+}
+
+.gallery__hero-sub-img {
+    margin-top: -3rem;
+    width: 15rem;
+}
+
+.gallery__arrow {
+    color: #fff;
+    font-size: 5rem;
+    margin-top: -3rem;
+}
+
+/////////////////////////////////////
+
+.gallery__img-container {
+    border-left: 3px solid lightgra;
+    border-right: 3px solid lightgray;
+    border-top: 3px solid lightgray;
+    display: inline-block;
+    height: 64rem;
+    overflow: hidden;
+    position: relative;
+    width: 50%;
+}
+
+.gallery__img-content {
+    display: inline-block;
+    height: 100%;
+    transform: scale(1);
+    width: 100%;
+    z-index: 0;
+}
+
+.gallery__left-container {
+    float: left;
+}
+
+.gallery__right-container {
+    float: right;
+}
+
+.gallery__img-filter {
+    height: 64rem;
+}
+
+.gallery__left-restaurant-img {
+    font-size: 5rem;
+}
+
+.gallery__right-restaurant-img {
+    font-size: 5rem;
+}
+
+.gallery__text-container {
+    // padding: 25% 10rem;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    width: 60%;
+    z-index: 3;
+}
+
+.gallery__img-text {
+    margin-bottom: 2rem;
+    opacity: 0;
+}
+
+.gallery__img-subtext {
+    color: white;
+    line-height: 2rem;
+    opacity: 0;
+    text-align: center;
+}
+
+.gallery__bakery {
+    // border-bottom: 3px solid #000;
+    border-bottom: 3px solid lightgray;
+    margin-bottom: -37rem;
+}

@@ -1,0 +1,47 @@
+.login__section {
+    height: 100vh;
+    margin-bottom: -48.5rem;
+    position: relative;
+    width: 100%;
+}
+
+.login__card {
+    background-color: $tertiary;
+    -webkit-box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.75);
+    height: 48rem;
+    left: 50%;
+    padding: 2rem;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 32rem;
+    z-index: 2000;
+}
+
+.login__form {
+    margin-bottom: 2rem;
+}
+
+.login__rectangle {
+    background-color: rgba(184, 134, 11, .4);
+    height: 40rem;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 72rem;
+    z-index: 1000;
+}
+
+.login__rectangle-container {
+    padding: 9rem 4rem;
+    width: 35.5rem;
+}
+
+
+
+
+
+

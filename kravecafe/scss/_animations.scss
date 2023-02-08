@@ -1,0 +1,212 @@
+////////////////////////////////////////////////////
+/*
+// INDEX SECTION
+*/
+////////////////////////////////////////////////////
+
+
+.middle-body__dining-paragraph {
+    transform: translateX(0rem);
+    transition: transform 2s ease-in-out, opacity 1s ease-in-out;
+}
+
+.middle-body__btn {
+    transform: translateX(0rem);
+    transition: transform 2s ease-in-out .5s, opacity 1s ease-in-out .5s;
+}
+
+.middle-body__img--box {
+    transition: transform 1.5s ease-in-out;
+}
+
+.middle-body__dining-row {
+    opacity: 0;
+}
+
+.bottom-body__img--box {
+    transition: transform 1.5s ease-in-out;
+}
+
+.bottom-body__bakery-paragraph {
+    transform: translateX(0rem);
+    transition: transform 2s ease-in-out, opacity 1s ease-in-out;
+}
+
+.bottom-body__btn {
+    transform: translateX(0rem);
+    transition: transform 2s ease-in-out .5s, opacity 1s ease-in-out .5s;
+}
+
+.bottom-body__bakery-row {
+    opacity: 0;
+}
+
+///////////////////////
+
+.upward-animation {
+    transform: translateY(3rem);
+}
+
+.left-to-right-animation {
+    opacity: 0;
+    transform: translateX(-4rem) !important;
+}
+
+.right-to-left-animation {
+    opacity: 0;
+    transform: translateX(4rem) !important;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+}
+
+.display-none {
+    display: none;
+}
+
+.arrow-bounce {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.delay-point2sec {
+    animation-delay: .2s;
+}
+//////////////////////////////
+//////////////////////////////
+//////////////////////////////
+
+
+
+.color-transition {
+    transition: color .3s ease-in-out;
+}
+
+.fast-color-transition {
+    transition: color .1s ease-in-out;
+}
+
+////////////////////////////////////////////////////
+/*
+// MENU SECTION
+*/
+////////////////////////////////////////////////////
+
+.menu__accordion {
+    transition: transform 2s ease-in-out;
+}
+
+.menu__card {
+    transition: opacity 2s ease-in-out;
+}
+
+button[aria-expanded=true] h2 .fa-plus-circle {
+    display: none;
+}
+button[aria-expanded=false] h2 .fa-minus-circle {
+    display: none;
+}
+
+
+
+////////////////////////////////////////////////////
+/*
+// LOCATION SECTION
+*/
+////////////////////////////////////////////////////
+.bounce-2 {
+    animation-name: bounce-2;
+    animation-timing-function: ease;
+}
+
+@keyframes bounce-2 {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+////////////////////////////////////////////////////
+/*
+// ABOUT SECTION
+*/
+////////////////////////////////////////////////////
+
+.about__background-img {
+    transition: transform 1s ease-in-out;
+}
+
+.about__arrow-link {
+    transition: transform 2s ease-in-out, opacity 1s ease-in-out .5s;
+}
+
+.about__content-container {
+    transition: transform 2s ease-in-out, opacity 1s ease-in-out;
+}
+
+.bounce-1 {
+    animation-name: bounce-2;
+    animation-timing-function: ease;
+}
+
+@keyframes bounce-1 {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-100px); }
+    100% { transform: translateY(0); }
+}
+
+
+////////////////////////////////////////////////////
+/*
+// GALLERY SECTION
+*/
+////////////////////////////////////////////////////
+
+.gallery__hero-section {
+    transition: transform 1s ease-in-out;
+}
+
+.gallery__hero-title {
+    transform: translateX(0rem);
+    transition: transform 3s ease-in-out 1s, opacity 3s ease-in-out 1s;
+}
+
+.gallery__hero-sub-title {
+    transform: translateX(0rem);
+    transition: transform 3s ease-in-out 1s, opacity 3s ease-in-out 1s;
+}
+
+.gallery__hero-sub-img {
+    transform: translateX(0rem);
+    transition: transform 3s ease-in-out, opacity 3s ease-in-out;
+}
+
+.gallery__fade-effect {
+    transition: opacity .5s ease-in-out;
+}
+
+.gallery__img-container:hover .filter-black {
+    opacity: .7;
+}
+
+.gallery__img-container:hover .gallery__img-text {
+    opacity: 1;
+}
+
+.gallery__img-container:hover .gallery__img-subtext {
+    opacity: 1;
+}
+
+.gallery__zoom-effect {
+    transition: transform 2s ease-in-out;
+}
+
+.gallery__img-container:hover .gallery__img-content {
+    transform: scale(1.2);
+}
+

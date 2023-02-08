@@ -1,0 +1,15 @@
+
+-when logged in you can access private reservation/private events/member events/reserve chef/classes/share photos in gallery
+
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+sass --watch scss/main.scss css/main.css
+
+todo:
+-persistentData/localStorage with javascript for calendar events to add into
+-connect google map api into javascript environment variable
+-refactor javascript
+-use iife
+-media queries. use https://www.gramercytavern.com/ as a guide for responsive style
+-for header, use opacity transition instead of moving it. since it is gradient, the opacity transition will make it look like it is moving.
