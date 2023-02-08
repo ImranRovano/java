@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <title>Krave Cafe NYC</title>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key="></script>
+</head>
+<body>
+  <header>
+    <!-- navbar section -->
+    <!---->
+    <div class="header-nav__gradient--expand header__nav fixed-top"></div>
+    <div class="header-nav__solid--hide header__nav fixed-top"></div>
+    <!---->
+    <nav class="header__nav navbar fixed-top navbar-expand-lg navbar-light font-weight-light align-items-start">
+      <a class="header-nav__gradient--logo navbar-brand ml-5 text-center text-uppercase" href="./index.html">Krave<br>Cafe NYC</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="header-nav__gradient-lists collapse navbar-collapse mt-5" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="header-nav__gradient--nav-item nav-item active dropdown">
+              <a class="header-navlink__gradient--font-size nav__link--default nav-link dropdown-toggle text-uppercase mr-4 font-weight-normal color-transition" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Menus
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class=" dropdown__link--default nav__link--default dropdown-item text-uppercase font-weight-normal fast-color-transition" href="./menu.html#breakfast">Breakfast</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown__link--default nav__link--default dropdown-item text-uppercase font-weight-normal fast-color-transition" href="./menu.html#lunch">Lunch</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown__link--default nav__link--default dropdown-item text-uppercase font-weight-normal fast-color-transition" href="./menu.html#dinner">Dinner</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown__link--default nav__link--default dropdown-item text-uppercase font-weight-normal fast-color-transition" href="./menu.html#beverage">Beverage</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown__link--default nav__link--default dropdown-item text-uppercase font-weight-normal fast-color-transition" href="./menu.html#wine">Wine</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown__link--default nav__link--default dropdown-item text-uppercase font-weight-normal fast-color-transition" href="./menu.html#bakery">Bakery</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown__link--default nav__link--default dropdown-item text-uppercase font-weight-normal fast-color-transition" href="./menu.html#dessert">Dessert</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown__link--default nav__link--default dropdown-item text-uppercase font-weight-normal fast-color-transition" href="./menu.html#special">Chef's Special</a>
+              </div>
+          </li>
+          <li class="header-nav__gradient--nav-item nav-item active">
+            <a class="header-navlink__gradient--font-size nav__link--default nav-link text-uppercase mr-3 font-weight-normal color-transition" href="./location.html">Location & Hours <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="header-nav__gradient--nav-item nav-item active">
+            <a class="header-navlink__gradient--font-size nav__link--default nav-link text-uppercase mr-3 font-weight-normal color-transition" href="./about.html">About <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="header-nav__gradient--nav-item nav-item active">
+            <a class="header-navlink__gradient--font-size nav__link--default nav-link text-uppercase mr-3 font-weight-normal color-transition" href="./gallery.html">Gallery <span class="sr-only">(current)</span></a>
+          </li>
+          <a class="header-nav__reserve--bg-transition-btn header-navlink__gradient--font-size button__btn--default nav__link--default btn btn-outline-primary text-uppercase my-2 my-sm-0 mr-5 rounded-0 button__btn--link reserve__link--default" href="./login.html">Reserve</a>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="location">
+    <section class="location-section">
+      <div class="location__container container">
+        <div class="location__row row">
+          <div class="location__left-col col-7 upward-animation">
+            <div class="location__border-left"></div>
+            <h2 class="location__title text-center content-title opacity-0">
+              Location & Hours
+            </h2>
+            <div class="location__address-hours row">
+              <div class="location__address col-6 clearfix opacity-0">
+                <ul class="location__address-list">
+                  <li class="location__address-item text-right content__paragraph--default">Krave Cafe NYC</li>
+                </ul>
+                <ul class="location__address-list">
+                  <li class="location__address-item text-right content__paragraph--default"><br><br>Address</li>
+                  <li class="location__address-item text-right content__paragraph--default">1802 E 65th St,<br> New York, NY 10065</li>
+                </ul>
+                <ul class="location__address-list">
+                  <li class="location__address-item text-right content__paragraph--default">Phone Number</li>
+                  <li class="location__address-item text-right content__paragraph--default">(123) 456-7890</li>
+                </ul>
+                <ul class="location__address-list">
+                  <li class="location__address-item text-right content__paragraph--default"><br>Email</li>
+                  <li class="location__address-item text-right content__paragraph--default">kravecafenyc@mail.com</li>
+                </ul>
+                <div class="location__arrow-container">
+                  <a class="location__map-link-arrow" href="#map">
+                    <h3 class="location__map-indicator text-right"><br>Map</h3>
+                    <i class="location__map-icon-arrow arrow-bounce fa fa-angle-double-down bounce-2" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="location__hour col-6 opacity-0">
+                <ul class="location__hour-list">
+                  <li class="location__hour-item content__paragraph--default">BREAKFAST</li>
+                  <li class="location__hour-item content__paragraph--default">Monday - Thursday  6:00a - 11:00a</li>
+                  <li class="location__hour-item content__paragraph--default">Friday - Saturday  6:30a - 11:30a</li>
+                </ul>
+                <ul class="location__hour-list">
+                  <li class="location__hour-item content__paragraph--default">LUNCH</li>
+                  <li class="location__hour-item content__paragraph--default">Monday - Thursday  11:00a - 5:30p</li>
+                  <li class="location__hour-item content__paragraph--default">Friday - Saturday  11:30a - 5:00p</li>
+                </ul>
+                <ul class="location__hour-list">
+                  <li class="location__hour-item content__paragraph--default">DINNER</li>
+                  <li class="location__hour-item content__paragraph--default">Monday - Thursday  5:30p - 10:00p</li>
+                  <li class="location__hour-item content__paragraph--default">Friday - Saturday  5:00p - 10:30p</li>
+                </ul>
+                <ul class="location__hour-list">
+                  <li class="location__hour-item content__paragraph--default">BAR & LOUNGE</li>
+                  <li class="location__hour-item content__paragraph--default">Monday - Thursday  5:30p - 12:00a</li>
+                  <li class="location__hour-item content__paragraph--default">Friday - Saturday  5:00p - 3:30a</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="location__border-left"></div> -->
+          <div class="location__right-col col-5 upward-animation">
+            <div class="location__border-right"></div>
+            <img class="location__img" src="./images/food-4397860_1920.jpg" alt="#">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="map__section">
+      <article class="map__container container">
+        <div class="map__row row">
+          <div class="map__col col">
+            <div id="map" class="map"></div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+<!-- ////////////////////////////////////// -->
+<!-- top footer -->
+
+<footer class="top-footer">
+  <nav class="top-footer__section top-footer__navbar--height navbar__solid--bg-color navbar position-sticky navbar-expand-lg navbar-light bg-light font-weight-light align-items-start">
+    <div class="top-footer__icon--position ml-5">
+      <a href="https://www.facebook.com/" target="_blank">
+        <i class="fa fa-facebook icon__link--default color-transition" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.twitter.com/" target="_blank">
+        <i class="fa fa-twitter icon__link--default color-transition" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.instagram.com/" target="_blank">
+        <i class="fa fa-instagram icon__link--default color-transition" aria-hidden="true"></i>
+      </a>
+    </div>
+    <div class="top-footer-nav ml-auto mr-5" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="top-footer__link--font nav__link--default nav-link text-uppercase ml-2 mr-2 color-transition" href="https://www.grubhub.com/" target="_blank">Delivery <span class="sr-only">(current)</span></a>
+        </li>
+        <div class="bar ml-3 mr-3"></div>
+        <li class="nav-item active">
+          <a class="top-footer__link--font nav__link--default nav-link text-uppercase ml-2 mr-2 color-transition" href="./location.html">Address <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="top-footer__link--font nav__link--default nav-link text-uppercase ml-2 mr-2 color-transition" href="./location.html">Contact Us <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="top-footer__link--font nav__link--default nav-link text-uppercase ml-2 mr-2 color-transition" href="./signup.html">Apply Job <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="top-footer__link--font nav__link--default nav-link text-uppercase ml-2 mr-2 color-transition" href="./signup.html">Email Signup <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</footer>
+
+<!-- ////////////////////////////////////// -->
+<!-- bottom footer -->
+
+<footer class="bottom-footer">
+  <article class="bottom-footer__section text-center align-bottom position-relative">
+    <p class="bottom-footer__text bottom-footer__text--style align-bottom">Built by Imran Huhn <a>(Click here to contact me)</a></p>
+  </article>
+</footer>
+
+<!-- ////////////////////////////////////// -->
+  <script src="./node_modules/jquery/dist/jquery.js"></script>
+  <script src="./node_modules/popper.js/dist/umd/popper.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="./scripts/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <title>Krave Cafe NYC</title>
+</head>
+<body class="login__body">
+  <header>
+    <!-- navbar section -->
+    <!---->
+    <div class="header-nav__gradient--expand header__nav fixed-top"></div>
+    <div class="header-nav__solid--hide header__nav fixed-top"></div>
+    <!---->
+    <nav class="header__nav navbar fixed-top navbar-expand-lg navbar-light font-weight-light align-items-start">
+      <a class="header-nav__gradient--logo navbar-brand ml-5 text-center text-uppercase" href="./index.html">Krave<br>Cafe NYC</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="header-nav__gradient-lists collapse navbar-collapse mt-5" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="header-nav__gradient--nav-item nav-item active dropdown">
+              <a class="header-navlink__gradient--font-size nav__link--default nav-link dropdown-toggle text-uppercase mr-4 font-weight-normal color-transition" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Menus
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class=" dropdown__link--default nav__link--default dropdown-item text-uppercase font-weight-normal fast-color-transition" href="./menu.html#breakfast">Breakfast</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown__link--default nav__link--default dropdown-item text-uppercase font-weight-normal fast-color-transition" href="./menu.html#lunch">Lunch</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown__link--default nav__link--default dropdown-item text-uppercase font-weight-normal fast-color-transition" href="./menu.html#dinner">Dinner</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown__link--default nav__link--default dropdown-item text-uppercase font-weight-normal fast-color-transition" href="./menu.html#beverage">Beverage</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown__link--default nav__link--default dropdown-item text-uppercase font-weight-normal fast-color-transition" href="./menu.html#wine">Wine</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown__link--default nav__link--default dropdown-item text-uppercase font-weight-normal fast-color-transition" href="./menu.html#bakery">Bakery</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown__link--default nav__link--default dropdown-item text-uppercase font-weight-normal fast-color-transition" href="./menu.html#dessert">Dessert</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown__link--default nav__link--default dropdown-item text-uppercase font-weight-normal fast-color-transition" href="./menu.html#special">Chef's Special</a>
+              </div>
+          </li>
+          <li class="header-nav__gradient--nav-item nav-item active">
+            <a class="header-navlink__gradient--font-size nav__link--default nav-link text-uppercase mr-3 font-weight-normal color-transition" href="./location.html">Location & Hours <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="header-nav__gradient--nav-item nav-item active">
+            <a class="header-navlink__gradient--font-size nav__link--default nav-link text-uppercase mr-3 font-weight-normal color-transition" href="./about.html">About <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="header-nav__gradient--nav-item nav-item active">
+            <a class="header-navlink__gradient--font-size nav__link--default nav-link text-uppercase mr-3 font-weight-normal color-transition" href="./gallery.html">Gallery <span class="sr-only">(current)</span></a>
+          </li>
+          <a class="header-nav__reserve--bg-transition-btn header-navlink__gradient--font-size button__btn--default nav__link--default btn btn-outline-primary text-uppercase my-2 my-sm-0 mr-5 rounded-0 button__btn--link reserve__link--default" href="./login.html">Reserve</a>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="login">
+    <section class="login__section">
+        <!-- <div class="login__title-container">
+          <h1 class="login__title-text text-center content-title">Krave Cafe NYC</h1>
+        </div> -->
+        <div class="login__card card">
+          <div class="login__card-body card-body">
+            <h5 class="login__card-title register-title card-title content-title">Login</h5>
+            <form class="login__form">
+              <div class="form-group">
+                <label class="content__paragraph--default" for="exampleInputUsername1">Username</label>
+                <input type="username" class="form-control" id="exampleInputUsername1" aria-describedby="usernameHelp">
+              </div>
+              <div class="form-group">
+                <label class="content__paragraph--default" for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="margin-left-1rem form-check-label content__paragraph--default" for="exampleCheck1">Remember</label>
+              </div>
+              <div class="login__btn-wrapper d-flex justify-content-center">
+                <button type="submit" class="login__btn-submit btn-pair btn btn-primary">Submit</button>
+                <button type="button" class="login__btn-demo btn-pair btn btn-primary">Demo</button>
+              </div>
+              <!-- <a href="./dashboard.html">DASHBOARD</a> -->
+            </form>
+            <p class="content__paragraph--default">Forgot Username? <a href="">Click Here</a></p>
+            <p class="content__paragraph--default">Forgot Password? <a href="">Click Here</a></p>
+          </div>
+        </div>
+
+        <div class="login__rectangle">
+          <div class="login__rectangle-container">
+            <p class="login__rectangle-text register-text content__paragraph--default">Don't have an account?<br>Then sign up!</p>
+            <div class="login__rectangle-btn-wrapper margin-top-3rem d-flex justify-content-center">
+              <a href="./signup.html">
+                <button class="login__rectangle-btn big-btn btn btn-outline-primary">
+                  Sign Up
+                </button>
+              </a> 
+            </div>
+          </div>
+        </div>
+    </section>
+  </main>
+
+<!-- ////////////////////////////////////// -->
+<!-- top footer -->
+
+<footer class="top-footer">
+  <nav class="top-footer__section top-footer__navbar--height navbar__solid--bg-color navbar position-sticky navbar-expand-lg navbar-light bg-light font-weight-light align-items-start">
+    <div class="top-footer__icon--position ml-5">
+      <a href="https://www.facebook.com/" target="_blank">
+        <i class="fa fa-facebook icon__link--default color-transition" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.twitter.com/" target="_blank">
+        <i class="fa fa-twitter icon__link--default color-transition" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.instagram.com/" target="_blank">
+        <i class="fa fa-instagram icon__link--default color-transition" aria-hidden="true"></i>
+      </a>
+    </div>
+    <div class="top-footer-nav ml-auto mr-5" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="top-footer__link--font nav__link--default nav-link text-uppercase ml-2 mr-2 color-transition" href="https://www.grubhub.com/" target="_blank">Delivery <span class="sr-only">(current)</span></a>
+        </li>
+        <div class="bar ml-3 mr-3"></div>
+        <li class="nav-item active">
+          <a class="top-footer__link--font nav__link--default nav-link text-uppercase ml-2 mr-2 color-transition" href="./location.html">Address <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="top-footer__link--font nav__link--default nav-link text-uppercase ml-2 mr-2 color-transition" href="./location.html">Contact Us <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="top-footer__link--font nav__link--default nav-link text-uppercase ml-2 mr-2 color-transition" href="./signup.html">Apply Job <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="top-footer__link--font nav__link--default nav-link text-uppercase ml-2 mr-2 color-transition" href="./signup.html">Email Signup <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</footer>
+
+<!-- ////////////////////////////////////// -->
+<!-- bottom footer -->
+
+<footer class="bottom-footer">
+  <article class="bottom-footer__section text-center align-bottom position-relative">
+    <p class="bottom-footer__text bottom-footer__text--style align-bottom">Built by Imran Huhn <a>(Click here to contact me)</a></p>
+  </article>
+</footer>
+
+<!-- ////////////////////////////////////// -->
+  <script src="./node_modules/jquery/dist/jquery.js"></script>
+  <script src="./node_modules/popper.js/dist/umd/popper.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="./scripts/app.js"></script>
+</body>
+</html>

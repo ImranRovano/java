@@ -1,0 +1,1448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./node_modules/fullcalendar/main.min.css">
+    <link rel="stylesheet" type="text/css" href="./node_modules/chart.js/dist/Chart.min.css">
+    <title>Krave Cafe NYC</title>
+</head>
+<body>
+  <main class="dashboard">
+    <section class="dashboard__row clearfix">
+      <article class="dashboard__nav col-2">
+        <div class="dashboard__header-nav-container">
+          <header>
+            <div class="dashboard__header-border">
+              <a href="./index.html">
+                <h1 class="dashboard__header-title content-title text-center">Krave<br>Cafe NYC</h1>
+              </a>
+            </div>
+          </header>
+          <hr>
+        </div>
+        <div class="dashboard__nav-options">
+          <ul class="dashboard__ul">
+              <li class="dashboard__li dashboard-li-active">
+                <i class="dashboard__li-icon fa fa-th content__paragraph--default" aria-hidden="true"></i>
+                Dashboard
+              </li>
+              <li class="dashboard__li">
+                <i class="dashboard__li-icon fa fa-user content__paragraph--default" aria-hidden="true"></i>
+                Profile
+              </li>
+              <li class="dashboard__li">
+                <i class="dashboard__li-icon fa fa-commenting content__paragraph--default" aria-hidden="true"></i>
+                Messages
+              </li>
+              <li class="dashboard__li">
+                <i class="dashboard__li-icon fa fa-list-alt content__paragraph--default" aria-hidden="true"></i>
+                Orders
+              </li>
+              <li class="dashboard__li">
+                <i class="dashboard__li-icon fa fa-calendar content__paragraph--default" aria-hidden="true"></i>
+                Calendar
+              </li>
+          </ul>
+        </div>
+        <div class="dashboard__footer-nav-container clearfix">
+          <hr>
+          <div class="dashboard__footer-img-container">
+            <img  class="dashboard__footer-img" src="./images/head-659652_640.png" alt="">
+          </div>
+          <footer class="dashboard__nav-footer">
+            <div class="dashboard__footer-user-profile-container">
+              <h2 class="dashboard__footer-user-name">Admin</h2>
+            </div>
+            <div class="dashboard__footer-logout-container">
+              <a href="">
+                <h2 class="dashboard__footer-logout">Logout<i class="fa fa-sign-out" aria-hidden="true"></i></h2>
+              </a>
+            </div>
+          </footer>
+        </div> 
+      </article>
+      <article id="dashboard__body-content" class="dashboard__body-content col-10">
+        <div class="dashboard__nav-row row">
+          <h1 class="dashboard__content--title inline-block">Dashboard</h1>
+          <h1 class="dashboard__content--title">Profile</h1>
+          <h1 class="dashboard__content--title">Messages</h1>
+          <h1 class="dashboard__content--title">Orders</h1>
+          <h1 class="dashboard__content--title">Calendar</h1>
+          <nav class="dashboard__header-nav ml-auto navbar navbar-light">
+            <form class="form-inline">
+              <input class="fontsize-onehalfrem form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="fontsize-onehalfrem btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </nav>
+        </div>
+
+<!-- ///////////////////////////////////// -->
+<!-- body section  -->
+
+        <div class="dashboard__body dashboard__body--dashboard visible">
+          <div class="grid-container dashboard__content-row row">
+            <div class="grid-item dashboard__col">
+              <div class="dashboard__card card">
+                <div class="profile__card-body card-body clear-fix">
+                  <h5 class="card-title content-title title__color--primary">Profile</h5>
+                  <h6 class="card-subtitle mb-2 text-muted content__paragraph--default">Admin</h6>
+                  <div class="dashboard__profile-img-container">
+                    <div class="dashboard__profile-img-wrapper">
+                      <img class="dashboard__profile-card-img" src="./images/head-659652_640.png" alt="">
+                    </div>
+                  </div>
+                  <hr class="dashboard__profile--hr">
+                  <table class="dashboard__profile--table card-text content__paragraph--default">
+                    <tr class="dashboard__profile--row">
+                      <td class="dashboard__profile--item text-right">Name:</td>
+                      <td class="dashboard__profile--item">John Doe</td>
+                    </tr>
+                    <tr class="dashboard__profile--row">
+                      <td class="dashboard__profile--item text-right">Position:</td>
+                      <td class="dashboard__profile--item">Owner</td>
+                    </tr>
+                    <tr class="dashboard__profile--row">
+                      <td class="dashboard__profile--item text-right">Username:</td>
+                      <td class="dashboard__profile--item">JohnDoe311</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item dashboard__col">
+              <div class="dashboard__card card">
+                <div class="message__card-body card-body">
+                  <h5 class="card-title content-title title__color--primary">Messages</h5>
+                  <h6 class="card-subtitle mb-2 text-muted content__paragraph--default">Private Messages</h6>
+                  <div class="unread-msg-circle"><span class="unread-msg-num">3</span></div>
+                  <p class="unread-msg-txt card-text content__paragraph--default"><em>Unread Messages : </em></p>  
+                  <div class="message__preview card-text content__paragraph--default scrollbar">
+                    <table class="message__preview--table"> 
+                      <tr class="message__preview--row">
+                        <td class="message__preview--item">Jane Smith :</td>
+                        <td class="message__preview--item">Message Subject</td> 
+                      </tr> 
+                      <tr class="message__preview--row">
+                        <td class="message__preview--item">Jane Smith :</td>
+                        <td class="message__preview--item">Message Subject</td>
+                      </tr>
+                      <tr class="message__preview--row">
+                        <td class="message__preview--item">Jane Smith :</td>
+                        <td class="message__preview--item">Message Subject</td>
+                      </tr>
+                      <tr class="message__preview--row">
+                        <td class="message__preview--item">Jane Smith :</td>
+                        <td class="message__preview--item">Message Subject</td>
+                      </tr>
+                      <tr class="message__preview--row">
+                        <td class="message__preview--item">Jane Smith :</td>
+                        <td class="message__preview--item">Message Subject</td>
+                      </tr>
+                      <tr class="message__preview--row">
+                        <td class="message__preview--item">Jane Smith :</td>
+                        <td class="message__preview--item">Message Subject</td>
+                      </tr>
+                      <tr class="message__preview--row">
+                        <td class="message__preview--item">Jane Smith :</td>
+                        <td class="message__preview--item">Message Subject</td>
+                      </tr>
+                      <tr class="message__preview--row">
+                        <td class="message__preview--item">Jane Smith :</td>
+                        <td class="message__preview--item">Message Subject</td>
+                      </tr>
+                      <tr class="message__preview--row">
+                        <td class="message__preview--item">Jane Smith :</td>
+                        <td class="message__preview--item">Message Subject</td>
+                      </tr>
+                      <tr class="message__preview--row">
+                        <td class="message__preview--item">Jane Smith :</td>
+                        <td class="message__preview--item">Message Subject</td>
+                      </tr>
+                      <tr class="message__preview--row">
+                        <td class="message__preview--item">Jane Smith :</td>
+                        <td class="message__preview--item">Message Subject</td>
+                      </tr>
+                      <tr class="message__preview--row">
+                        <td class="message__preview--item">Jane Smith :</td>
+                        <td class="message__preview--item">Message Subject</td>
+                      </tr>
+                      <tr class="message__preview--row">
+                        <td class="message__preview--item">Jane Smith :</td>
+                        <td class="message__preview--item">Message Subject</td>
+                      </tr>
+                      <tr class="message__preview--row">
+                        <td class="message__preview--item">Jane Smith :</td>
+                        <td class="message__preview--item">Message Subject</td>
+                      </tr>
+                      <tr class="message__preview--row">
+                        <td class="message__preview--item">Jane Smith :</td>
+                        <td class="message__preview--item">Message Subject</td>
+                      </tr>
+                      <tr class="message__preview--row">
+                        <td class="message__preview--item">Jane Smith :</td>
+                        <td class="message__preview--item">Message Subject</td>
+                      </tr>
+                      <tr class="message__preview--row">
+                        <td class="message__preview--item">Jane Smith :</td>
+                        <td class="message__preview--item">Message Subject</td>
+                      </tr>
+                      <tr class="message__preview--row">
+                        <td class="message__preview--item">Jane Smith :</td>
+                        <td class="message__preview--item">Message Subject</td>
+                      </tr>
+                      <tr class="message__preview--row">
+                        <td class="message__preview--item">Jane Smith :</td>
+                        <td class="message__preview--item">Message Subject</td>
+                      </tr>
+                      <tr class="message__preview--row">
+                        <td class="message__preview--item">Jane Smith :</td>
+                        <td class="message__preview--item">Message Subject</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item dashboard__col">
+              <div class="dashboard__card card">
+                <div class="orders__card-body card-body">
+                  <h5 class="card-title content-title title__color--primary">Weekly Orders</h5>
+                  <h6 class="card-subtitle mb-2 text-muted content__paragraph--default">Calculated in the last 7 Days</h6>
+                  <canvas id="myChart"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item dashboard__col">
+              <div class="dashboard__card card">
+                <div class="order-history__card-body card-body">
+                  <h5 class="card-title content-title title__color--primary">Order History</h5>
+                  <h6 class="card-subtitle mb-2 text-muted content__paragraph--default">Recent Purchases</h6>
+                  <div class="order-history__card-text card-text content__paragraph--default scrollbar">
+                    <table class="order-history__table">
+                      <tr class="order-history__row">
+                        <td class="order-history__item">Order No. #000000</td>
+                        <td class="order-history__item">-</td>
+                        <td class="order-history__item">Canceled</td>
+                      </tr>
+                      <tr class="order-history__row">
+                        <td class="order-history__item">Order No. #000000</td>
+                        <td class="order-history__item">-</td>
+                        <td class="order-history__item">Pending</td>
+                      </tr>
+                      <tr class="order-history__row">
+                        <td class="order-history__item">Order No. #000000</td>
+                        <td class="order-history__item">-</td>
+                        <td class="order-history__item">Ready</td>
+                      </tr>
+                      <tr class="order-history__row">
+                        <td class="order-history__item">Order No. #000000</td>
+                        <td class="order-history__item">-</td>
+                        <td class="order-history__item">Completed</td>
+                      </tr>
+                      <tr class="order-history__row">
+                        <td class="order-history__item">Order No. #000000</td>
+                        <td class="order-history__item">-</td>
+                        <td class="order-history__item">Canceled</td>
+                      </tr>
+                      <tr class="order-history__row">
+                        <td class="order-history__item">Order No. #000000</td>
+                        <td class="order-history__item">-</td>
+                        <td class="order-history__item">Pending</td>
+                      </tr>
+                      <tr class="order-history__row">
+                        <td class="order-history__item">Order No. #000000</td>
+                        <td class="order-history__item">-</td>
+                        <td class="order-history__item">Ready</td>
+                      </tr>
+                      <tr class="order-history__row">
+                        <td class="order-history__item">Order No. #000000</td>
+                        <td class="order-history__item">-</td>
+                        <td class="order-history__item">Completed</td>
+                      </tr>
+                      <tr class="order-history__row">
+                        <td class="order-history__item">Order No. #000000</td>
+                        <td class="order-history__item">-</td>
+                        <td class="order-history__item">Canceled</td>
+                      </tr>
+                      <tr class="order-history__row">
+                        <td class="order-history__item">Order No. #000000</td>
+                        <td class="order-history__item">-</td>
+                        <td class="order-history__item">Pending</td>
+                      </tr>
+                      <tr class="order-history__row">
+                        <td class="order-history__item">Order No. #000000</td>
+                        <td class="order-history__item">-</td>
+                        <td class="order-history__item">Ready</td>
+                      </tr>
+                      <tr class="order-history__row">
+                        <td class="order-history__item">Order No. #000000</td>
+                        <td class="order-history__item">-</td>
+                        <td class="order-history__item">Completed</td>
+                      </tr>
+                      <tr class="order-history__row">
+                        <td class="order-history__item">Order No. #000000</td>
+                        <td class="order-history__item">-</td>
+                        <td class="order-history__item">Canceled</td>
+                      </tr>
+                      <tr class="order-history__row">
+                        <td class="order-history__item">Order No. #000000</td>
+                        <td class="order-history__item">-</td>
+                        <td class="order-history__item">Pending</td>
+                      </tr>
+                      <tr class="order-history__row">
+                        <td class="order-history__item">Order No. #000000</td>
+                        <td class="order-history__item">-</td>
+                        <td class="order-history__item">Ready</td>
+                      </tr>
+                      <tr class="order-history__row">
+                        <td class="order-history__item">Order No. #000000</td>
+                        <td class="order-history__item">-</td>
+                        <td class="order-history__item">Completed</td>
+                      </tr>
+                      <tr class="order-history__row">
+                        <td class="order-history__item">Order No. #000000</td>
+                        <td class="order-history__item">-</td>
+                        <td class="order-history__item">Canceled</td>
+                      </tr>
+                      <tr class="order-history__row">
+                        <td class="order-history__item">Order No. #000000</td>
+                        <td class="order-history__item">-</td>
+                        <td class="order-history__item">Pending</td>
+                      </tr>
+                      <tr class="order-history__row">
+                        <td class="order-history__item">Order No. #000000</td>
+                        <td class="order-history__item">-</td>
+                        <td class="order-history__item">Ready</td>
+                      </tr>
+                      <tr class="order-history__row">
+                        <td class="order-history__item">Order No. #000000</td>
+                        <td class="order-history__item">-</td>
+                        <td class="order-history__item">Completed</td>
+                      </tr>
+                      <tr class="order-history__row">
+                        <td class="order-history__item">Order No. #000000</td>
+                        <td class="order-history__item">-</td>
+                        <td class="order-history__item">Canceled</td>
+                      </tr>
+                      <tr class="order-history__row">
+                        <td class="order-history__item">Order No. #000000</td>
+                        <td class="order-history__item">-</td>
+                        <td class="order-history__item">Pending</td>
+                      </tr>
+                      <tr class="order-history__row">
+                        <td class="order-history__item">Order No. #000000</td>
+                        <td class="order-history__item">-</td>
+                        <td class="order-history__item">Ready</td>
+                      </tr>
+                      <tr class="order-history__row">
+                        <td class="order-history__item">Order No. #000000</td>
+                        <td class="order-history__item">-</td>
+                        <td class="order-history__item">Completed</td>
+                      </tr>
+                      <tr class="order-history__row">
+                        <td class="order-history__item">Order No. #000000</td>
+                        <td class="order-history__item">-</td>
+                        <td class="order-history__item">Canceled</td>
+                      </tr>
+                      <tr class="order-history__row">
+                        <td class="order-history__item">Order No. #000000</td>
+                        <td class="order-history__item">-</td>
+                        <td class="order-history__item">Pending</td>
+                      </tr>
+                      <tr class="order-history__row">
+                        <td class="order-history__item">Order No. #000000</td>
+                        <td class="order-history__item">-</td>
+                        <td class="order-history__item">Ready</td>
+                      </tr>
+                      <tr class="order-history__row">
+                        <td class="order-history__item">Order No. #000000</td>
+                        <td class="order-history__item">-</td>
+                        <td class="order-history__item">Completed</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item dashboard__col">
+              <div class="dashboard__card card">
+                <div class="calendar-list__container card-body">
+                  <div id='calendar-list' class="calendar-list"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- ////////////////////////// -->
+        <!-- individual content  -->
+        <div class="dashboard__body dashboard__body--profile">  
+          <div class="grid-container row profile__content--col">
+            <div class="profile__content--grid-item profile__content--card card">
+              <div class="profile__content--card-body card-body clear-fix">
+                <h5 class="card-title content-title title__color--primary">Profile</h5>
+                <h6 class="card-subtitle mb-2 text-muted content__paragraph--default">Admin</h6>
+                <div class="profile__content--img-container">
+                  <div class="profile__content--img-wrapper">
+                    <img class="profile__content--card-img" src="./images/head-659652_640.png" alt="">
+                  </div>
+                </div>
+                <hr class="profile__content--hr">
+                <div class="profile__content--table-container">
+                  <table class="profile__content--table card-text content__paragraph--default">
+                    <tr class="profile__content--row">
+                      <td class="profile__content--item text-right">Username :</td>
+                      <td class="profile__content--item">JohnDoe311</td>
+                    </tr>
+                    <tr class="profile__content--row">
+                      <td class="profile__content--item text-right">Name :</td>
+                      <td class="profile__content--item">John Doe</td>
+                    </tr>
+                    <tr class="profile__content--row">
+                      <td class="profile__content--item text-right">Email :</td>
+                      <td class="profile__content--item">JohnDoe311@email.com</td>
+                    </tr>
+                    <tr class="profile__content--row">
+                      <td class="profile__content--item text-right">Phone Number :</td>
+                      <td class="profile__content--item">(123) 456-7890</td>
+                    </tr>
+                    <tr class="profile__content--row">
+                      <td class="profile__content--item text-right">Position :</td>
+                      <td class="profile__content--item">
+                        <select id="position" class="position card-text content__paragraph--default" name="position">
+                          <option value="owner">Owner</option>
+                          <option value="manager">Manager</option>
+                          <option value="employee">Employee</option>
+                          <option value="customer">Customer</option>
+                        </select>
+                      </td>
+                    </tr>
+                  </table>
+                  <div class="profile__content--wrapper-btn">
+                    <button class="profile__content--edit-btn btn btn-primary">Edit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="profile2__content--grid-item profile__content--card card">
+              <div class="profile__content--card-body card-body clear-fix">
+                <h5 class="card-title content-title title__color--primary">Image Uploads</h5>
+                <h6 class="card-subtitle mb-2 text-muted content__paragraph--default">Archive</h6>
+                <div class="profile2__wrapper-btn">
+                  <button class="profile2__img-btn btn btn-primary">Upload</button>
+                </div>
+                <div class="profile2__img-uploads scrollbar">
+                  <img class="profile2__img-item" src="https://via.placeholder.com/150" alt="">
+                  <img class="profile2__img-item" src="https://via.placeholder.com/728x90.png" alt="">
+                  <img class="profile2__img-item" src="https://via.placeholder.com/350x150" alt="">
+                  <img class="profile2__img-item" src="https://via.placeholder.com/200x100" alt="">
+                  <img class="profile2__img-item" src="https://via.placeholder.com/140x100" alt="">
+                  <img class="profile2__img-item" src="https://via.placeholder.com/350x65" alt="">
+                  <img class="profile2__img-item" src="https://via.placeholder.com/150" alt="">
+                  <img class="profile2__img-item" src="https://via.placeholder.com/728x90.png" alt="">
+                  <img class="profile2__img-item" src="https://via.placeholder.com/350x150" alt="">
+                  <img class="profile2__img-item" src="https://via.placeholder.com/200x100" alt="">
+                  <img class="profile2__img-item" src="https://via.placeholder.com/140x100" alt="">
+                  <img class="profile2__img-item" src="https://via.placeholder.com/350x65" alt="">
+                  <img class="profile2__img-item" src="https://via.placeholder.com/150" alt="">
+                  <img class="profile2__img-item" src="https://via.placeholder.com/728x90.png" alt="">
+                  <img class="profile2__img-item" src="https://via.placeholder.com/350x150" alt="">
+                  <img class="profile2__img-item" src="https://via.placeholder.com/200x100" alt="">
+                  <img class="profile2__img-item" src="https://via.placeholder.com/140x100" alt="">
+                  <img class="profile2__img-item" src="https://via.placeholder.com/350x65" alt="">
+                  <img class="profile2__img-item" src="https://via.placeholder.com/150" alt="">
+                  <img class="profile2__img-item" src="https://via.placeholder.com/728x90.png" alt="">
+                  <img class="profile2__img-item" src="https://via.placeholder.com/350x150" alt="">
+                  <img class="profile2__img-item" src="https://via.placeholder.com/200x100" alt="">
+                  <img class="profile2__img-item" src="https://via.placeholder.com/140x100" alt="">
+                  <img class="profile2__img-item" src="https://via.placeholder.com/350x65" alt="">
+                  <img class="profile2__img-item" src="https://via.placeholder.com/150" alt="">
+                  <img class="profile2__img-item" src="https://via.placeholder.com/728x90.png" alt="">
+                  <img class="profile2__img-item" src="https://via.placeholder.com/350x150" alt="">
+                  <img class="profile2__img-item" src="https://via.placeholder.com/200x100" alt="">
+                  <img class="profile2__img-item" src="https://via.placeholder.com/140x100" alt="">
+                  <img class="profile2__img-item" src="https://via.placeholder.com/350x65" alt="">
+                  <img class="profile2__img-item" src="https://via.placeholder.com/150" alt="">
+                  <img class="profile2__img-item" src="https://via.placeholder.com/728x90.png" alt="">
+                  <img class="profile2__img-item" src="https://via.placeholder.com/350x150" alt="">
+                  <img class="profile2__img-item" src="https://via.placeholder.com/200x100" alt="">
+                  <img class="profile2__img-item" src="https://via.placeholder.com/140x100" alt="">
+                  <img class="profile2__img-item" src="https://via.placeholder.com/350x65" alt="">
+                  <img class="profile2__img-item" src="https://via.placeholder.com/150" alt="">
+                  <img class="profile2__img-item" src="https://via.placeholder.com/728x90.png" alt="">
+                  <img class="profile2__img-item" src="https://via.placeholder.com/350x150" alt="">
+                  <img class="profile2__img-item" src="https://via.placeholder.com/200x100" alt="">
+                  <img class="profile2__img-item" src="https://via.placeholder.com/140x100" alt="">
+                  <img class="profile2__img-item" src="https://via.placeholder.com/350x65" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ///////////////////////////////////////////////////// -->
+
+        <div class="message2__open message2__sub-section dashboard__body dashboard__body--messages">
+          <div class="grid-container row dashboard__col">
+            <div class="message2__open-msg--grid-item dashboard__card card">
+              <div class="message__card-body card-body">
+                <div class="message2__button--row">
+                  <button class="open-btn message-btn btn btn-primary">Open</button>
+                  <button class="inbox-btn message-btn btn btn-primary active">Inbox</button>
+                  <button class="sent-btn message-btn btn btn-primary">Sent</button>
+                  <button class="compose-btn message-btn btn btn-primary">Compose</button>
+                </div>
+                <h5 class="card-title content-title title__color--primary">Messages</h5>
+                <h6 class="card-subtitle mb-2 text-muted content__paragraph--default">Open Message</h6>
+                <div class="unread-msg-circle hidden"><span class="unread-msg-num">3</span></div>
+                <p class="unread-msg-txt card-text content__paragraph--default hidden"><em>Unread Messages : </em></p>
+                <div class="message2__open--subject-line card-text content__paragraph--default">
+                  <h3 class="margin-bottom-3rem">Subject Line Here</h3>
+                  <div class="message2__open--img-info">
+                    <div class="message2__open--img-container">
+                      <img class="message2__open--img" src="./images/female_user_3440833.png" alt="#">
+                    </div>
+                    <div class="message2__open--info">
+                      <h5 class="fontsize-onehalfrem">Username311</h5>
+                      <h6>Nov 20, 2021, 10:58 PM</h6>
+                    </div>
+                  </div>
+                  <div class="message2__open--message-body-container">
+                    <p class="message2__open--message-body scrollbar">
+                      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+  
+                      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+  
+                      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+  
+                      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+  
+                      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+  
+                      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+  
+                      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+  
+                      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+  
+                      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+  
+                      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+  
+                      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+  
+                      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+  
+                      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+  
+                      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+  
+                      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+  
+                      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+  
+                      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+  
+                      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+  
+                      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+  
+                      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+  
+                      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+  
+                      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+  
+                      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+  
+                      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                    </p>
+                  </div>
+                </div>
+                <div class="reply-btn-container">
+                  <button class="reply-btn btn btn-primary">Reply</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="message2__inbox message2__sub-section dashboard__body dashboard__body--messages">
+          <div class="grid-container row dashboard__col">
+            <div class="message2__content--grid-item dashboard__card card">
+              <div class="message__card-body card-body">
+                <div class="message2__button--row">
+                  <button class="open-btn message-btn btn btn-primary">Open</button>
+                  <button class="inbox-btn message-btn btn btn-primary active">Inbox</button>
+                  <button class="sent-btn message-btn btn btn-primary">Sent</button>
+                  <button class="compose-btn message-btn btn btn-primary">Compose</button>
+                </div>
+                <h5 class="card-title content-title title__color--primary">Messages</h5>
+                <h6 class="card-subtitle mb-2 text-muted content__paragraph--default">Inbox</h6>
+                <div class="unread-msg-circle"><span class="unread-msg-num">3</span></div>
+                <p class="unread-msg-txt card-text content__paragraph--default"><em>Unread Messages : </em></p>
+                <div class="message2__preview card-text content__paragraph--default scrollbar">
+                  <table class="message2__preview--table">
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">FROM: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">FROM: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">FROM: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">FROM: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">FROM: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">FROM: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">FROM: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">FROM: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">FROM: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">FROM: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">FROM: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">FROM: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">FROM: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">FROM: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">FROM: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">FROM: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">FROM: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">FROM: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">FROM: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">FROM: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">FROM: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">FROM: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">FROM: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">FROM: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        <div class="message2__sent message2__sub-section dashboard__body dashboard__body--messages">
+          <div class="grid-container row dashboard__col">
+            <div class="message2__content--grid-item dashboard__card card">
+              <div class="message__card-body card-body">
+                <div class="message2__button--row">
+                  <button class="open-btn message-btn btn btn-primary">Open</button>
+                  <button class="inbox-btn message-btn btn btn-primary active">Inbox</button>
+                  <button class="sent-btn message-btn btn btn-primary">Sent</button>
+                  <button class="compose-btn message-btn btn btn-primary">Compose</button>
+                </div>
+                <h5 class="card-title content-title title__color--primary">Messages</h5>
+                <h6 class="card-subtitle mb-2 text-muted content__paragraph--default">Sent Mail</h6>
+                <div class="message2__preview-sentmail message2__preview card-text content__paragraph--default scrollbar">
+                  <table class="message2__preview--table">
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">TO: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">TO: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">TO: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">TO: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">TO: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">TO: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">TO: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">TO: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">TO: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">TO: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">TO: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">TO: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">TO: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">TO: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">TO: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">TO: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">TO: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">TO: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">TO: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">TO: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">TO: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">TO: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">TO: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">TO: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">TO: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">TO: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">TO: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">TO: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                    <tr class="message2__preview--row">
+                      <td class="message2__preview--item">TO: </td>
+                      <td class="message2__preview--item">Jane Smith</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Subject Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Preview Message</td>
+                      <td class="message2__preview--item">-</td>
+                      <td class="message2__preview--item">Time Recieved</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+                    
+        <div class="message2__compose message2__sub-section dashboard__body dashboard__body--messages">
+          <div class="grid-container row dashboard__col">
+            <div class="message2__open-msg--grid-item dashboard__card card">
+              <div class="message__card-body card-body">
+                <div class="message2__button--row">
+                  <button class="open-btn message-btn btn btn-primary">Open</button>
+                  <button class="inbox-btn message-btn btn btn-primary active">Inbox</button>
+                  <button class="sent-btn message-btn btn btn-primary">Sent</button>
+                  <button class="compose-btn message-btn btn btn-primary">Compose</button>
+                </div>
+                <h5 class="card-title content-title title__color--primary">Messages</h5>
+                <h6 class="card-subtitle mb-2 text-muted content__paragraph--default">Compose New Message</h6>
+                <div class="message2__compose--form message2__preview card-text content__paragraph--default">
+                  <form action="" method="post">
+                    <input class="message2__input form-control" type="email" name="recipient" id="recipient" placeholder="Recipient"><br>
+                    <input class="message2__input form-control" type="text" name="subject" id="subject" placeholder="Subject"><br>
+                    <textarea class="message2__textarea message2__input form-control scrollbar" name="message-body" id="message-body" cols="250" rows="20" placeholder="Message Body"></textarea>
+                    <input class="message2-btn btn btn-primary" type="submit" value="Submit">
+                  </form>  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- //////////////////////////////////////////////////// -->
+        <div class="dashboard__body dashboard__body--orders">
+          <div class="grid-container row dashboard__col">
+            <div class="orders__content--grid-item dashboard__card card">
+              <div class="orders__card-body card-body">
+                <h5 class="card-title content-title title__color--primary">Daily Orders</h5>
+                <h6 class="card-subtitle mb-2 text-muted content__paragraph--default">Calculated in the last Business Hours</h6>
+                <canvas id="myChart2"></canvas>
+              </div>
+            </div>
+            <div class="orders__content--grid-item dashboard__card card">
+              <div class="orders__card-body card-body">
+                <h5 class="card-title content-title title__color--primary">Weekly Orders</h5>
+                <h6 class="card-subtitle mb-2 text-muted content__paragraph--default">Calculated in the last 7 Days</h6>
+                <canvas id="myChart3"></canvas>
+              </div>
+            </div>
+            <div class="orders__content--grid-item dashboard__card card">
+              <div class="orders__card-body card-body">
+                <h5 class="card-title content-title title__color--primary">Monthly Orders</h5>
+                <h6 class="card-subtitle mb-2 text-muted content__paragraph--default">Calculated in the last 12 Months</h6>
+                <canvas id="myChart4"></canvas>
+              </div>
+            </div>
+            <div class="orders__content--grid-item dashboard__card card">
+              <div class="order-history__card-body card-body">
+                <h5 class="card-title content-title title__color--primary">Order History</h5>
+                <h6 class="card-subtitle mb-2 text-muted content__paragraph--default">Recent Purchases</h6>
+                <div class="order-history2__card-text card-text content__paragraph--default scrollbar">
+                  <table class="order-history2__table">
+                    <tr class="order-history2__row">
+                      <td class="order-history2__item">Order No. #000000</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">Order</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">12/12/2021 02:23 PM</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">$25.49</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">Cancelled</td>
+                    </tr>
+                    <tr class="order-history2__row">
+                      <td class="order-history2__item">Order No. #000000</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">Order</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">12/12/2021 02:23 PM</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">$25.49</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">Pending</td>
+                    </tr>
+                    <tr class="order-history2__row">
+                      <td class="order-history2__item">Order No. #000000</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">Order</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">12/12/2021 02:23 PM</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">$25.49</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">Ready</td>
+                    </tr>
+                    <tr class="order-history2__row">
+                      <td class="order-history2__item">Order No. #000000</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">Order</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">12/12/2021 02:23 PM</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">$25.49</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">Completed</td>
+                    </tr>
+                    <tr class="order-history2__row">
+                      <td class="order-history2__item">Order No. #000000</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">Order</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">12/12/2021 02:23 PM</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">$25.49</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">Cancelled</td>
+                    </tr>
+                    <tr class="order-history2__row">
+                      <td class="order-history2__item">Order No. #000000</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">Order</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">12/12/2021 02:23 PM</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">$25.49</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">Pending</td>
+                    </tr>
+                    <tr class="order-history2__row">
+                      <td class="order-history2__item">Order No. #000000</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">Order</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">12/12/2021 02:23 PM</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">$25.49</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">Ready</td>
+                    </tr>
+                    <tr class="order-history2__row">
+                      <td class="order-history2__item">Order No. #000000</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">Order</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">12/12/2021 02:23 PM</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">$25.49</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">Completed</td>
+                    </tr>
+                    <tr class="order-history2__row">
+                      <td class="order-history2__item">Order No. #000000</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">Order</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">12/12/2021 02:23 PM</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">$25.49</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">Cancelled</td>
+                    </tr>
+                    <tr class="order-history2__row">
+                      <td class="order-history2__item">Order No. #000000</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">Order</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">12/12/2021 02:23 PM</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">$25.49</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">Pending</td>
+                    </tr>
+                    <tr class="order-history2__row">
+                      <td class="order-history2__item">Order No. #000000</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">Order</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">12/12/2021 02:23 PM</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">$25.49</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">Ready</td>
+                    </tr>
+                    <tr class="order-history2__row">
+                      <td class="order-history2__item">Order No. #000000</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">Order</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">12/12/2021 02:23 PM</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">$25.49</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">Completed</td>
+                    </tr>
+                    <tr class="order-history2__row">
+                      <td class="order-history2__item">Order No. #000000</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">Order</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">12/12/2021 02:23 PM</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">$25.49</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">Cancelled</td>
+                    </tr>
+                    <tr class="order-history2__row">
+                      <td class="order-history2__item">Order No. #000000</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">Order</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">12/12/2021 02:23 PM</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">$25.49</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">Pending</td>
+                    </tr>
+                    <tr class="order-history2__row">
+                      <td class="order-history2__item">Order No. #000000</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">Order</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">12/12/2021 02:23 PM</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">$25.49</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">Ready</td>
+                    </tr>
+                    <tr class="order-history2__row">
+                      <td class="order-history2__item">Order No. #000000</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">Order</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">12/12/2021 02:23 PM</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">$25.49</td>
+                      <td class="order-history2__item">-</td>
+                      <td class="order-history2__item">Completed</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dashboard__body dashboard__body--calendar">
+          <div class="grid-container row dashboard__col">
+            <div class="calendar__content--grid-item dashboard__card card">
+              <div class="calendar__container card-body">
+                <div class="calendar__text-container">
+                  <h5 class="calendar__title card-title content-title title__color--primary">Calendar</h5>
+                  <h6 class="calendar__subtitle card-subtitle mb-2 text-muted content__paragraph--default">Grid-View</h6>
+                </div>
+                <div id='calendar' class="calendar"></div>
+              </div>
+            </div>
+            <div class="calendar-list2__content--grid-item dashboard__card card">
+              <div class="calendar-list2__container card-body">
+                <div class="calendar-list2__text-container">
+                  <h5 class="calendar-list2__title card-title content-title title__color--primary">Events</h5>
+                  <h6 class="calendar-list2__subtitle card-subtitle text-muted content__paragraph--default">List-View</h6>
+                </div>
+                <div id='calendar-list2' class="calendar-list2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+
+
+
+
+
+  
+<!-- ////////////////////////////////////// -->
+  <script src="./node_modules/jquery/dist/jquery.js"></script>
+  <script src="./node_modules/popper.js/dist/umd/popper.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="./scripts/app.js"></script>
+  <script src="./node_modules/chart.js/dist/Chart.js"></script>
+  <script src="./node_modules/fullcalendar/main.js"></script>
+</body>
+</html>

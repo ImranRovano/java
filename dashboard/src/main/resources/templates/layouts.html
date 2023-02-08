@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+
+	<head th:fragment="headTag">
+	    <meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" th:href="@{/bootstrap-5.2.1-dist/css/bootstrap.min.css}"/>
+	
+	</head>
+	
+	<nav th:fragment="navBar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+	  <div class="container-fluid">
+	    <a class="navbar-brand">&lt;Bug Tracker&gt;</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarNav">
+	      <ul class="navbar-nav">
+	        <li class="nav-item">
+	          <a class="nav-link" th:href="@{/}">Dashboard</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" th:href="@{/members}">All Members</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" th:href="@{/members/new}">Add Member</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" th:href="@{/projects}">All Projects</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" th:href="@{/projects/new}">Add Project</a>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+	
+	<div th:fragment="memForm">
+	  <div class="container__form--col-md-6 col-md-6">
+	    <label for="inputFname" class="container__form--form-label form-label">First Name</label>
+	    <input th:field="${memberFormHtml.memberFname}" type="text" class="container__form--form-control form-control" id="inputFname">
+	  </div>
+	  <div class="container__form--col-md-6 col-md-6">
+	    <label for="inputLname" class="container__form--form-label form-label">Last Name</label>
+	    <input th:field="${memberFormHtml.memberLname}" type="text" class="container__form--form-control form-control" id="inputLname">
+	  </div>
+	  <div class="container__form--form-col-6 col-6">
+	    <label for="inputEmail" class="contaienr__form--form-label form-label">Email Address</label>
+	    <input th:field="${memberFormHtml.memberEmail}" type="email" class="container__form--form-control form-control" id="inputEmail" placeholder="example@email.com">
+	  </div>
+	  <div class="container__col-12 col-12">
+	    <button type="submit" class="container__form--form-btn btn btn-primary">Save Member</button>
+	  </div>
+	</div>
+	
+	<div th:fragment="memData" class="container">
+		<div class="row">
+			<table>
+				<thead>
+					<tr>
+						<th>Member First Name</th>
+						<th>Member Last Name</th>
+						<th>Member Email</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:each="memberDataTempVar : ${memberDataHtml}">
+						<td th:text="${memberDataTempVar.memberFname}" ></td>
+						<td th:text="${memberDataTempVar.memberLname}"></td>
+						<td th:text="${memberDataTempVar.memberEmail}"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	
+	<div th:fragment="projForm">					
+	  <div class="container__form--col-md-6 col-md-6">
+	    <label for="inputProjTitle" class="container__form--form-label form-label">Project Title</label>
+	    <input th:field="${projectFormHtml.projTitle}" type="text" class="container__form--form-control form-control" id="inputProjTitle">
+	  </div>
+	  <div class="container__form--col-md-6 col-md-6">
+	    <label for="inputProjTitle" class="container__form--form-label form-label">Project Description</label>
+	    <textarea th:field="${projectFormHtml.projDescription}" class="container__form--form-control form-control" id="inputProjDescription"></textarea>
+	  </div>
+	  <div class="container__col-12 col-12">
+	  	<button class="container__form--form-btn btn btn-primary" type="submit">Save Project</button>
+	  </div>
+	</div>
+	
+	<div th:fragment="projData" class="container">
+		<div class="row">
+			<table>
+				<thead>
+					<tr>
+						<th>Project Title</th>
+						<th>Project Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:each="projectDataTempVar : ${projectDataHtml}">
+						<td th:text="${projectDataTempVar.projTitle}"></td>
+						<td th:text="${projectDataTempVar.projDescription}"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	
+</html>

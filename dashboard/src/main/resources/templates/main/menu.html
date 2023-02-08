@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <title>Krave Cafe NYC</title>
+</head>
+<body>
+  <header>
+    <!-- navbar section -->
+    <!---->
+    <div class="header-nav__gradient--expand header__nav fixed-top"></div>
+    <div class="header-nav__solid--hide header__nav fixed-top"></div>
+    <!---->
+    <nav class="header__nav navbar fixed-top navbar-expand-lg navbar-light font-weight-light align-items-start">
+      <a class="header-nav__gradient--logo navbar-brand ml-5 text-center text-uppercase" href="./index.html">Krave<br>Cafe NYC</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="header-nav__gradient-lists collapse navbar-collapse mt-5" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="header-nav__gradient--nav-item nav-item active dropdown">
+              <a class="header-navlink__gradient--font-size nav__link--default nav-link dropdown-toggle text-uppercase mr-4 font-weight-normal color-transition" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Menus
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a id="breakfast_nav" class=" dropdown__link--default nav__link--default dropdown-item text-uppercase font-weight-normal fast-color-transition" href="./menu.html#breakfast">Breakfast</a>
+                <div class="dropdown-divider"></div>
+                <a id="lunch_nav" class="dropdown__link--default nav__link--default dropdown-item text-uppercase font-weight-normal fast-color-transition" href="./menu.html#lunch">Lunch</a>
+                <div class="dropdown-divider"></div>
+                <a id="dinner_nav" class="dropdown__link--default nav__link--default dropdown-item text-uppercase font-weight-normal fast-color-transition" href="./menu.html#dinner">Dinner</a>
+                <div class="dropdown-divider"></div>
+                <a id="beverage_nav" class="dropdown__link--default nav__link--default dropdown-item text-uppercase font-weight-normal fast-color-transition" href="./menu.html#beverage">Beverage</a>
+                <div class="dropdown-divider"></div>
+                <a id="wine_nav" class="dropdown__link--default nav__link--default dropdown-item text-uppercase font-weight-normal fast-color-transition" href="./menu.html#wine">Wine</a>
+                <div class="dropdown-divider"></div>
+                <a id="bakery_nav" class="dropdown__link--default nav__link--default dropdown-item text-uppercase font-weight-normal fast-color-transition" href="./menu.html#bakery">Bakery</a>
+                <div class="dropdown-divider"></div>
+                <a id="dessert_nav" class="dropdown__link--default nav__link--default dropdown-item text-uppercase font-weight-normal fast-color-transition" href="./menu.html#dessert">Dessert</a>
+                <div class="dropdown-divider"></div>
+                <a id="special_nav" class="dropdown__link--default nav__link--default dropdown-item text-uppercase font-weight-normal fast-color-transition" href="./menu.html#special">Chef's Special</a>
+              </div>
+          </li>
+          <li class="header-nav__gradient--nav-item nav-item active">
+            <a class="header-navlink__gradient--font-size nav__link--default nav-link text-uppercase mr-3 font-weight-normal color-transition" href="./location.html">Location & Hours <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="header-nav__gradient--nav-item nav-item active">
+            <a class="header-navlink__gradient--font-size nav__link--default nav-link text-uppercase mr-3 font-weight-normal color-transition" href="./about.html">About <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="header-nav__gradient--nav-item nav-item active">
+            <a class="header-navlink__gradient--font-size nav__link--default nav-link text-uppercase mr-3 font-weight-normal color-transition" href="./gallery.html">Gallery <span class="sr-only">(current)</span></a>
+          </li>
+          <a class="header-nav__reserve--bg-transition-btn header-navlink__gradient--font-size button__btn--default nav__link--default btn btn-outline-primary text-uppercase my-2 my-sm-0 mr-5 rounded-0 button__btn--link reserve__link--default" href="./login.html">Reserve</a>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="menu">
+    <section class="menu__section">
+      <div class="menu__container container">
+        <div class="menu__row row">
+          <div class="menu__col col">
+            <div class="menu__accordion accordion upward-animation" id="accordionExample">
+              <div class="menu__png-container d-flex justify-content-center">
+                <img class="menu__png-title" src="./images/kisspng-cafe-menu-vector-graphics-restaurant-food-5bfe8a6680fc03.1964538015434082305283.png" alt="#">
+              </div>
+              <div id="breakfast"></div>
+              <div class="menu__card card opacity-0">
+                <div class="card-header" id="headingOne">
+                  <button class="menu__btn btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <h2 class="menu__title mb-0 content-title">
+                      <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                      <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                      Breakfast
+                    </h2>
+                  </button>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="menu__card-body card-body">
+                    <div class="row">
+                      <div class="menu__description-container">
+                        <p class="menu__description content__paragraph--default">Breakfast is the first meal of a day, usually eaten in the morning. The word in English refers to breaking the fasting period of the previous night. There is a strong likelihood for one or more "typical", or "traditional", breakfast menus to exist in most places, but their composition varies widely from place to place, and has varied over time, so that globally a very wide range of preparations and ingredients are now associated with breakfast.</p>
+                      </div>
+                      <div class="col-4">
+                        <p class="text-center content__paragraph--default">Breakfast Item #1<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">Breakfast Item #2<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">Breakfast Item #3<br><span>$24.99</span></p>
+                      </div>
+                      <div class="col-4">
+                        <p class="text-center content__paragraph--default">Breakfast Item #4<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">Breakfast Item #5<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">Breakfast Item #6<br><span>$24.99</span></p>
+                      </div>
+                      <div class="col-4">
+                        <p class="text-center content__paragraph--default">Breakfast Item #7<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">Breakfast Item #8<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">Breakfast Item #9<br><span>$24.99</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="lunch"></div>
+              <div class="menu__card card opacity-0">
+                <div class="card-header" id="headingTwo">
+                  <button class="menu__btn btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <h2 class="menu__title mb-0 content-title">
+                      <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                      <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                      Lunch
+                    </h2>
+                  </button>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="menu__card-body card-body">
+                    <div class="row">
+                      <div class="menu__description-container">
+                        <p class="menu__description content__paragraph--default">Lunch, an abbreviation for luncheon, is a meal eaten around midday. During the 20th century, the meaning gradually narrowed to a small or mid-sized meal eaten midday. Lunch is commonly the second meal of the day, after breakfast. The meal varies in size depending on the culture, and significant variations exist in different areas of the world.</p>
+                      </div>
+                      <div class="col-4">
+                        <p class="text-center content__paragraph--default">Lunch Item #1<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">Lunch Item #2<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">Lunch Item #3<br><span>$24.99</span></p>
+                      </div>
+                      <div class="col-4">
+                        <p class="text-center content__paragraph--default">Lunch Item #4<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">Lunch Item #5<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">Lunch Item #6<br><span>$24.99</span></p>
+                      </div>
+                      <div class="col-4">
+                        <p class="text-center content__paragraph--default">Lunch Item #7<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">Lunch Item #8<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">Lunch Item #9<br><span>$24.99</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="dinner"></div>
+              <div class="menu__card card opacity-0">
+                <div class="card-header" id="headingThree">
+                  <button class="menu__btn btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <h2 class="menu__title mb-0 content-title">
+                      <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                      <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                      Dinner
+                    </h2>
+                  </button>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="menu__card-body card-body">
+                    <div class="row">
+                      <div class="menu__description-container">
+                        <p class="menu__description content__paragraph--default">Dinner usually refers to what is in many Western cultures the largest and most formal meal of the day, which many Westerners eat in the evening. Historically the largest meal used to be eaten around midday, and called dinner. In Western cultures, especially among the elite, it gradually migrated later in the day over the 16th to 19th centuries. However, the word "dinner" can have different meanings depending on culture, and may mean a meal of any size eaten at any time of day. In particular it is still sometimes used for a meal at noon or in the early afternoon on special occasions, such as a Christmas dinner. In hot climates, people have always tended to eat the main meal in the evening, after the temperature has fallen.</p>
+                      </div>
+                      <div class="col-4">
+                        <p class="text-center content__paragraph--default">Dinner Item #1<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">Dinner Item #2<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">Dinner Item #3<br><span>$24.99</span></p>
+                      </div>
+                      <div class="col-4">
+                        <p class="text-center content__paragraph--default">Dinner Item #4<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">Dinner Item #5<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">Dinner Item #6<br><span>$24.99</span></p>
+                      </div>
+                      <div class="col-4">
+                        <p class="text-center content__paragraph--default">Dinner Item #7<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">Dinner Item #8<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">Dinner Item #9<br><span>$24.99</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="beverage"></div>
+              <div class="menu__card card opacity-0">
+                <div class="card-header" id="headingFour">
+                  <button class="menu__btn btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <h2 class="menu__title mb-0 content-title">
+                      <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                      <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                      Beverage
+                    </h2>
+                  </button>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                  <div class="menu__card-body card-body">
+                    <div class="row">
+                      <div class="menu__description-container">
+                        <p class="menu__description content__paragraph--default">A drink (or beverage) is a liquid intended for human consumption. In addition to their basic function of satisfying thirst, drinks play important roles in human culture. Common types of drinks include plain drinking water, milk, coffee, tea, hot chocolate, juice and soft drinks. In addition, alcoholic drinks such as wine, beer, and liquor, which contain the drug ethanol, have been part of human culture for more than 8,000 years.<br>
+  
+                        <br>Non-alcoholic drinks often signify drinks that would normally contain alcohol, such as beer and wine, but are made with a sufficiently low concentration of alcohol by volume. The category includes drinks that have undergone an alcohol removal process such as non-alcoholic beers and de-alcoholized wines.</p>
+                      </div>
+                      <div class="col-4">
+                        <p class="text-center content__paragraph--default">Beverage Item #1<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">Beverage Item #2<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">Breakfast Item #3<br><span>$24.99</span></p>
+                      </div>
+                      <div class="col-4">
+                        <p class="text-center content__paragraph--default">Beverage Item #4<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">Beverage Item #5<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">Beverage Item #6<br><span>$24.99</span></p>
+                      </div>
+                      <div class="col-4">
+                        <p class="text-center content__paragraph--default">Beverage Item #7<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">Beverage Item #8<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">Beverage Item #9<br><span>$24.99</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="wine"></div>
+              <div class="menu__card card opacity-0">
+                <div class="card-header" id="headingFive">
+                  <button class="menu__btn btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    <h2 class="menu__title mb-0 content-title">
+                      <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                      <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                      Wine
+                    </h2>
+                  </button>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                  <div class="menu__card-body card-body">
+                    <div class="row">
+                      <div class="menu__description-container">
+                        <p class="menu__description content__paragraph--default">Wine is an alcoholic drink typically made from fermented grapes. Yeast consumes the sugar in the grapes and converts it to ethanol, carbon dioxide, and heat. Different varieties of grapes and strains of yeasts produce different styles of wine. These variations result from the complex interactions between the biochemical development of the grape, the reactions involved in fermentation, the grape's growing environment (terroir), and the production process. Many countries enact legal appellations intended to define styles and qualities of wine. These typically restrict the geographical origin and permitted varieties of grapes, as well as other aspects of wine production. Wines not made from grapes involve fermentation of additional crops including, rice wine and other fruit wines such as plum, cherry, pomegranate, currant and elderberry.<br>
+  
+                        <br>Wine has been produced for thousands of years. The earliest evidence of wine is from Georgia (6000 BC), Iran (5000 BC), and Sicily (4000 BC). New World wine has some connection to alcoholic beverages made by the indigenous peoples of the Americas, but is mainly connected to later Viking area of Vinland and Spanish traditions in New Spain. Later, as Old World wine further developed viticulture techniques, Europe would encompass three of the largest wine-producing regions. Today, the five countries with the largest wine-producing regions are in Italy, Spain, France, the United States, and China.<br>
+                      
+                        <br>Wine has long played an important role in religion. Red wine was associated with blood by the ancient Egyptians and was used by both the Greek cult of Dionysus and the Romans in their Bacchanalia; Judaism also incorporates it in the Kiddush and Christianity in the Eucharist. Egyptian, Greek, Roman, and Israeli wine cultures are still connected to these ancient roots. Similarly the largest wine regions in Italy, Spain, and France have heritages in connection to sacramental wine, likewise, viticulture traditions in the Southwestern United States started within New Spain as Catholic friars and monks first produced wines in New Mexico and California.</p>
+                      </div>
+                      <div class="col-4">
+                        <p class="text-center content__paragraph--default">Wine Item #1<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">Wine Item #2<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">Wine Item #3<br><span>$24.99</span></p>
+                      </div>
+                      <div class="col-4">
+                        <p class="text-center content__paragraph--default">Wine Item #4<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">Wine Item #5<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">Wine Item #6<br><span>$24.99</span></p>
+                      </div>
+                      <div class="col-4">
+                        <p class="text-center content__paragraph--default">Wine Item #7<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">Wine Item #8<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">Wine Item #9<br><span>$24.99</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="bakery"></div>
+              <div class="menu__card card opacity-0">
+                <div class="card-header" id="headingSix">
+                  <button class="menu__btn btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    <h2 class="menu__title mb-0 content-title">
+                      <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                      <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                      Bakery
+                    </h2>
+                  </button>
+                </div>
+                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                  <div class="menu__card-body card-body">
+                    <div class="row">
+                      <div class="menu__description-container content__paragraph--default">
+                        <p class="menu__description">A bakery is an establishment that produces and sells flour-based food baked in an oven such as bread, cookies, cakes, pastries, and pies. Some retail bakeries are also categorized as cafés, serving coffee and tea to customers who wish to consume the baked goods on the premises. Confectionery items are also made in most bakeries throughout the world.</p>
+                      </div>
+                      <div class="col-4">
+                        <p class="text-center content__paragraph--default">BakeryDessert Item #1<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">BakeryDessert Item #2<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">BakeryDessert Item #3<br><span>$24.99</span></p>
+                      </div>
+                      <div class="col-4">
+                        <p class="text-center content__paragraph--default">BakeryDessert Item #4<br><span>$24.99</span></p>
+                        <p class="text-center">BakeryDessert Item #5<br><span>$24.99</span></p>
+                        <p class="text-center">BakeryDessert Item #6<br><span>$24.99</span></p>
+                      </div>
+                      <div class="col-4">
+                        <p class="text-center">BakeryDessert Item #7<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">BakeryDessert Item #8<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">BakeryDessert Item #9<br><span>$24.99</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="dessert"></div>
+              <div class="menu__card card opacity-0">
+                <div class="card-header" id="headingSeven">
+                  <button class="menu__btn btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    <h2 class="menu__title mb-0 content-title">
+                      <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                      <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                      Dessert
+                    </h2>
+                  </button>
+                </div>
+                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                  <div class="menu__card-body card-body">
+                    <div class="row">
+                      <div class="menu__description-container">
+                        <p class="menu__description content__paragraph--default">Dessert is a course that concludes a meal. The course usually consists of sweet foods, such as confections, and possibly a beverage such as dessert wine or liqueur; however, in the United States it may include coffee, cheeses, nuts, or other savory items regarded as a separate course elsewhere. In some parts of the world, such as much of central and western Africa, and most parts of China, there is no tradition of a dessert course to conclude a meal.<br>
+  
+                        <br>The term dessert can apply to many confections, such as biscuits, cakes, cookies, custards, gelatins, ice creams, pastries, pies, puddings, sweet soups, and tarts. Fruit is also commonly found in dessert courses because of its naturally occurring sweetness. Some cultures sweeten foods that are more commonly savory to create desserts.</p>
+                      </div>
+                      <div class="col-4">
+                        <p class="text-center content__paragraph--default">Dessert Item #1<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">Dessert Item #2<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">Dessert Item #3<br><span>$24.99</span></p>
+                      </div>
+                      <div class="col-4">
+                        <p class="text-center content__paragraph--default">Dessert Item #4<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">Dessert Item #5<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">Dessert Item #6<br><span>$24.99</span></p>
+                      </div>
+                      <div class="col-4">
+                        <p class="text-center content__paragraph--default">Dessert Item #7<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">Dessert Item #8<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">Dessert Item #9<br><span>$24.99</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="special"></div>
+              <div class="menu__card card opacity-0">
+                <div class="card-header" id="headingEight">
+                  <button class="menu__btn btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                    <h2 class="menu__title mb-0 content-title">
+                      <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                      <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                      Chef's Special
+                    </h2>
+                  </button>
+                </div>
+                <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
+                  <div class="menu__card-body card-body">
+                    <div class="row">
+                      <div class="menu__description-container">
+                        <p class="menu__description content__paragraph--default">A signature dish is a recipe that identifies an individual chef or restaurant. Ideally it should be unique and allow an informed gastronome to name the chef in a blind tasting. It can be thought of as the culinary equivalent of an artist finding their own style, or an author finding their own voice. In practice a chef's signature dish often changes with time or they may claim several signature dishes.<br>
+  
+                        <br>In a weaker sense, a signature dish may become associated with an individual restaurant, particularly if the chef who created it is no longer with the establishment. It can also be used to refer to a culinary region, in which case its meaning may be the equivalent of "national dish". In many cases, restaurants will base their menu development on tastes and styles which are unique to the restaurant's geographical location. Local produce, restaurant décor, and even the type of building you choose can all contribute to a larger yield by taking on local sensibilities. Emphasizing (an establishment's) connection to its location provides great marketing possibilities.<br>
+                        
+                        <br>At its weakest, the term can simply mean "chef's specials" which are in no way unique or even particularly unusual.</p>
+                      </div>
+                      <div class="col-4">
+                        <p class="text-center content__paragraph--default">Chef's Special Item #1<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">Chef's Special Item #2<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">Chef's Special Item #3<br><span>$24.99</span></p>
+                      </div>
+                      <div class="col-4">
+                        <p class="text-center content__paragraph--default">Chef's Special Item #4<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">Chef's Special Item #5<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">Chef's Special Item #6<br><span>$24.99</span></p>
+                      </div>
+                      <div class="col-4">
+                        <p class="text-center content__paragraph--default">Chef's Special Item #7<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">Chef's Special Item #8<br><span>$24.99</span></p>
+                        <p class="text-center content__paragraph--default">Chef's Special Item #9<br><span>$24.99</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<!-- ////////////////////////////////////// -->
+<!-- top footer -->
+
+<footer class="top-footer">
+  <nav class="top-footer__section top-footer__navbar--height navbar__solid--bg-color navbar position-sticky navbar-expand-lg navbar-light bg-light font-weight-light align-items-start">
+    <div class="top-footer__icon--position ml-5">
+      <a href="https://www.facebook.com/" target="_blank">
+        <i class="fa fa-facebook icon__link--default color-transition" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.twitter.com/" target="_blank">
+        <i class="fa fa-twitter icon__link--default color-transition" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.instagram.com/" target="_blank">
+        <i class="fa fa-instagram icon__link--default color-transition" aria-hidden="true"></i>
+      </a>
+    </div>
+    <div class="top-footer-nav ml-auto mr-5" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="top-footer__link--font nav__link--default nav-link text-uppercase ml-2 mr-2 color-transition" href="https://www.grubhub.com/" target="_blank">Delivery <span class="sr-only">(current)</span></a>
+        </li>
+        <div class="bar ml-3 mr-3"></div>
+        <li class="nav-item active">
+          <a class="top-footer__link--font nav__link--default nav-link text-uppercase ml-2 mr-2 color-transition" href="./location.html">Address <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="top-footer__link--font nav__link--default nav-link text-uppercase ml-2 mr-2 color-transition" href="./location.html">Contact Us <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="top-footer__link--font nav__link--default nav-link text-uppercase ml-2 mr-2 color-transition" href="./signup.html">Apply Job <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="top-footer__link--font nav__link--default nav-link text-uppercase ml-2 mr-2 color-transition" href="./signup.html">Email Signup <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</footer>
+
+<!-- ////////////////////////////////////// -->
+<!-- bottom footer -->
+
+<footer class="bottom-footer">
+  <article class="bottom-footer__section text-center align-bottom position-relative">
+    <p class="bottom-footer__text bottom-footer__text--style align-bottom">Built by Imran Huhn <a>(Click here to contact me)</a></p>
+  </article>
+</footer>
+
+<!-- ////////////////////////////////////// -->
+  <script src="./node_modules/jquery/dist/jquery.js"></script>
+  <script src="./node_modules/popper.js/dist/umd/popper.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="./scripts/app.js"></script>
+</body>
+</html>
