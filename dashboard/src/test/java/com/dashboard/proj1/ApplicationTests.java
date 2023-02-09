@@ -1,4 +1,4 @@
-package com.bugtrack.proj1;
+package com.dashboard.proj1;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
